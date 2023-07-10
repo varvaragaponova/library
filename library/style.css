@@ -71,3 +71,29 @@ body {
     width: 28px;
     height: 28px;
 }
+
+/*SECTION WELCOME*/
+
+.welcome {
+    height: 600px;
+    background: url('./assets/img/welcome__bg.png') center center / cover no-repeat;
+}
+
+.welcome_title {
+    position: absolute;
+    top: 220px;
+    width: 600px;
+    height: 220px;
+    padding: 35px 40px;
+    font: 400 40px "Forum", cursive;
+    text-align: center;
+    line-height: 50px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #FFF;
+    background-color: #0C0C0E;
+}
+
+.welcome > .wrapper {
+    position: relative;
+}
