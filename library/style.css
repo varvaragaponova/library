@@ -97,3 +97,78 @@ body {
 .welcome > .wrapper {
     position: relative;
 }
+
+/*SECTION ABOUT*/
+
+.about > .wrapper {
+    padding: 20px 20px 40px 20px;
+}
+
+.title {
+    position: relative;
+    margin-bottom: 61px;
+    color: #0C0C0E;
+    font: 400 40px "Forum";
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.title::after {
+    content:"";
+    position: absolute;
+    width: 50px;
+    height: 1px;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #0C0C0E;
+}
+
+.about_info {
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.slider_container {
+    position: relative;
+    width: 1400px;
+    height: 560px;
+    margin-bottom: 35px;
+    overflow-x: hidden;
+}
+
+.slider_images {
+    position: absolute;
+    display: flex;
+    gap: 25px;
+}
+
+.slider_buttons {
+    display: flex;
+    width: 78px;
+    margin: 0 auto;
+}
+
+.slider_btn {
+    width: 26px;
+    height: 26px;
+    padding: 5px;
+    border-radius: 50%;
+    border: none;
+    background-color: transparent;
+}
+
+.btn_circle {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #0C0C0E;
+}
+
+.selected {
+    background-color: #BB945F;
+}
