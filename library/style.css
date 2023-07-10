@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    display: flex;
+    overflow-x: hidden;
+    flex-direction: column;
+    justify-content: space-between;
+}
