@@ -106,7 +106,7 @@ body {
 
 .title {
     position: relative;
-    margin-bottom: 61px;
+    margin-bottom: 60px;
     color: #0C0C0E;
     font: 400 40px "Forum";
     line-height: 40px;
@@ -324,4 +324,75 @@ input:checked ~ .season {
 
 .hidden {
     display: none;
+}
+
+/*SECTION COFFEE-SHOP*/
+
+.coffee-shop .wrapper {
+    padding: 20px 20px 40px 20px;
+}
+
+.coffee-shop .title {
+    margin-bottom: 62px;
+}
+
+.coffee-shop_text {
+    margin-bottom: 40px;
+    text-align: center;
+    line-height: 40px;
+    letter-spacing: 2px;
+}
+
+.coffee-shop_prices {
+    display: flex;
+    justify-content: space-between;
+}
+
+.list_title {
+    color: #BB945F;
+    font-family: "Forum";
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: 2px;
+}
+
+.sweets_list .list_title {
+    text-align: end;
+}
+
+.drinks_list,
+.sweets_list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.drinks_item,
+.sweets_item {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    text-transform: capitalize;
+}
+
+.drinks_item {
+    width: 438px;
+    justify-content: space-between;
+}
+
+.sweets_item {
+    gap: 218px;
+    justify-content: end;
+}
+
+.item_text {
+    line-height: 40px;
+    letter-spacing: 2px;
+}
+
+.price {
+    font-family: "Forum";
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: 2px;
 }
