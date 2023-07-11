@@ -172,3 +172,156 @@ body {
 .selected {
     background-color: #BB945F;
 }
+
+/*SECTION FAVORITES*/
+.favorites > .wrapper {
+    padding: 14px 20px 40px 20px;
+}
+
+.select_info {
+    margin-bottom: 40px;
+    font-family: "Inter-Bold";
+}
+
+.favorites_form {
+    display: flex;
+    margin-bottom: 40px;
+    gap: 88px;
+}
+
+.input_container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.input {
+    display: none;
+}
+
+.done {
+    position: relative;
+    display: block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 2px solid #000;
+}
+
+.done::before {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: #000;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+input:checked + .done::before {
+    opacity: 1;
+}
+
+input:checked ~ .season {
+    font-family: "Inter-Bold";
+    letter-spacing: 0.015em;
+}
+
+.season {
+    letter-spacing: 0.01em;
+}
+
+/*BOOK CARDS*/
+
+.book_list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 260px;
+}
+
+.book_item {
+    position: relative;
+    width: 550px;
+    height: 555px;
+    padding: 15px 170px 15px 20px;
+    border: 1px solid #000;
+}
+
+.book_subtitle {
+    position: relative;
+    margin-bottom: 20px;
+    font-family: "Forum";
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.book_subtitle::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 60px;
+    height: 1px;
+    background-color: #BB945F;;
+}
+
+.book_name {
+    min-width: 457px;
+    margin-bottom: 20px;
+    font-family: "Inter-Bold";
+    font-size: 15px;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.book_name span {
+    text-transform: none;
+}
+
+.book_descr {
+    font-family: "Inter-Regular";
+    font-size: 15px;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.btn_buy {
+    position: absolute;
+    bottom: 15px;
+    width: 75px;
+    height: 30px;
+    border-radius: 2px;
+    border: 1px solid #0C0C0E;
+    background-color: transparent;
+    color: #0C0C0E;
+    text-align: center;
+    font-family: "Inter-Bold";
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+.own {
+    border-color: #BB945F;
+    color: #BB945F;
+}
+
+.book_img {
+    position: absolute;
+    right: -40px;
+    top: 255px;
+}
+
+.visible {
+    display: flex;
+}
+
+.hidden {
+    display: none;
+}
