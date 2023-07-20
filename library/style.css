@@ -512,6 +512,11 @@ input:checked ~ .season {
     margin-bottom: 25px;
     border-radius: 10px;
     border: none;
+    color: #8E8E8E;
+    font-family: "Forum";
+    font-size: 30px;
+    line-height: 50px;
+    letter-spacing: 0.6px;
 }
 
 .card_input::placeholder {
