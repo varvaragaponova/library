@@ -350,14 +350,24 @@
                 <div class="card_container">
                     <div class="find_card">
                         <h3 class="card_subtitle">Find your Library card</h3>
-                        <div class="form_container">
-                            <form action="" class="form">
+                        <form action="" class="form">
+                            <div class="wrapper_inputs">
                                 <div class="form_subtitle">Brooklyn Public Library</div>
-                                <input class="card_input" type="text" placeholder="Reader's name">
-                                <input class="card_input" type="text" placeholder="Card number">
-                            </form>
-                            <button class="card_btn">Check the card</button>
-                        </div>
+                                <input class="card_input"
+                                    type="text"
+                                    placeholder="Reader's name"
+                                    required
+                                    pattern="^[A-Za-z0-9\-]+$"
+                                    title="You can enter latin letters, numbers and hyphens">
+                                <input class="card_input"
+                                    type="text"
+                                    placeholder="Card number"
+                                    required
+                                    pattern="^[A-Za-z0-9\-]+$"
+                                    title="You can enter latin letters, numbers and hyphens">
+                            </div>
+                            <button type="submit" class="card_btn">Check the card</и>
+                        </form>
                     </div>
                     <div class="get_card">
                         <div class="get_subtitle">Get a reader card</div>

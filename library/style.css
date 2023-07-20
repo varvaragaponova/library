@@ -333,7 +333,7 @@ input:checked ~ .season {
 }
 
 .coffee-shop .title {
-    margin-bottom: 62px;
+    margin-bottom: 61px;
 }
 
 .coffee-shop_text {
@@ -485,14 +485,14 @@ input:checked ~ .season {
     text-align: center;
 }
 
-.form_container {
+.form {
     width: 600px;
     height: 386px;
     border: 3px solid #BB945F;
     background: #FFF;
 }
 
-.form {
+.wrapper_inputs {
     display: flex;
     width: 560px;
     height: 272px;
@@ -507,8 +507,8 @@ input:checked ~ .season {
     width: 520px;
     height: 66px;
     padding-left: 20px;
-    padding-top: 15px;
-    padding-bottom: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     margin-bottom: 25px;
     border-radius: 10px;
     border: none;
