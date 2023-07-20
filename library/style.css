@@ -401,12 +401,23 @@ input:checked ~ .season {
 }
 
 .price {
+    position: relative;
     font-family: "Forum";
     font-size: 20px;
     line-height: 40px;
     letter-spacing: 2px;
 }
 
+.price::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100px;
+    height: 1px;
+    left: -160px;
+    top: 19px;
+    background-color: #BB945F;
+}
 /*SECTION CONTACTS*/
 
 .contacts .title {
