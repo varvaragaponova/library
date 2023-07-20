@@ -59,6 +59,10 @@ body {
     list-style-type: none;
 }
 
+.menu_item {
+    transition: all .3s;
+}
+
 .menu_item a {
     color: #FFF;
     text-decoration: none;
@@ -182,18 +186,20 @@ body {
 }
 
 .select_info {
-    margin-bottom: 40px;
+    margin-bottom: 35px;
     font-family: "Inter-Bold";
 }
 
 .favorites_form {
     display: flex;
-    margin-bottom: 40px;
-    gap: 88px;
+    margin-bottom: 36px;
+    gap: 78px;
+    margin-left: -5px;
 }
 
 .input_container {
     display: flex;
+    padding: 5px;
     align-items: center;
     gap: 20px;
 }
@@ -297,7 +303,7 @@ input:checked ~ .season {
 
 .btn_buy {
     position: absolute;
-    bottom: 15px;
+    bottom: 13px;
     width: 75px;
     height: 30px;
     border-radius: 2px;
@@ -308,6 +314,7 @@ input:checked ~ .season {
     font-family: "Inter-Bold";
     font-size: 10px;
     letter-spacing: 1px;
+    transition: all .3s;
 }
 
 .own {
@@ -443,6 +450,7 @@ input:checked ~ .season {
     text-transform: capitalize;
     text-decoration: none;
     color: #000;
+    transition: all .3s;
 }
 
 .phone_list {
@@ -459,6 +467,7 @@ input:checked ~ .season {
     text-transform: capitalize;
     text-decoration: none;
     color: #000;
+    transition: all .3s;
 }
 
 .mail_item {
@@ -549,6 +558,9 @@ input:checked ~ .season {
     font-size: 20px;
     letter-spacing: 1px;
     background-color: transparent;
+    border-radius: 2px;
+    border: 1px solid #0C0C0E;
+    transition: all .3s;
 }
 
 .get_card {
@@ -588,6 +600,7 @@ input:checked ~ .season {
     font-family: "Inter-Bold";
     font-size: 10px;
     letter-spacing: 1px;
+    transition: all .3s;
 }
 
 /*FOOTER*/
@@ -614,6 +627,7 @@ input:checked ~ .season {
     color: #FFF;
     font-size: 15px;
     line-height: 20px;
+    transition: all .3s;
 }
 
 .address {
@@ -629,6 +643,10 @@ input:checked ~ .season {
 
 .sociality_list a {
     text-decoration: none;
+}
+
+.sociality_icon {
+    transition: all .3s;
 }
 
 .work_time {
@@ -660,6 +678,7 @@ input:checked ~ .season {
 .author a {
     text-decoration: none;
     color: #FFF;
+    transition: all .3s;
 }
 
 .author {
@@ -668,4 +687,55 @@ input:checked ~ .season {
 
 .school {
     text-align: center;
+}
+
+/*HOVER*/
+@media (any-hover: hover) {
+    .menu_item:hover {
+        transform: scale(1.1);
+        transition: all .3s;
+        cursor: pointer;
+    }
+
+    .profile:hover,
+    .slider_btn:hover,
+    .input_container {
+        cursor: pointer;
+    }
+
+    .btn_buy.active:hover {
+        border: 1px solid #BB945F;
+        background: #BB945F;
+        cursor: pointer;
+        transition: all .3s;
+    }
+
+    .phone_item a:hover,
+    .mail_item a:hover {
+        color: #BB945F;
+        transition: all .3s;
+    }
+
+    .card_btn:hover,
+    .get_btn:hover {
+        border: 1px solid #BB945F;
+        background: #BB945F;
+        cursor: pointer;
+        transition: all .3s;
+    }
+
+    .address a:hover {
+        color: #BB945F;
+        transition: all .3s;
+    }
+
+    .sociality_icon:hover {
+        transform: scale(1.2);
+        transition: all .3s;
+    }
+
+    .author a:hover {
+        color: #BB945F;
+        transition: all .3s;
+    }
 }
