@@ -86,19 +86,27 @@ body {
     background-position: center;
 }
 
-.welcome_title {
+.title_wrapper {
     position: absolute;
     top: 220px;
     width: 600px;
     height: 220px;
     padding: 35px 40px;
-    font: 400 40px "Forum", cursive;
+    background-color: #0C0C0E;
     text-align: center;
+}
+
+.welcome_title {
+    font: 400 40px "Forum";
     line-height: 50px;
     letter-spacing: 3px;
     text-transform: uppercase;
     color: #FFF;
     background-color: #0C0C0E;
+}
+
+.welcome_title span {
+    letter-spacing: 4px;
 }
 
 .welcome > .wrapper {
@@ -113,7 +121,7 @@ body {
 
 .title {
     position: relative;
-    margin-bottom: 60px;
+    margin-bottom: 61px;
     color: #0C0C0E;
     font: 400 40px "Forum";
     line-height: 40px;
@@ -192,7 +200,7 @@ body {
 
 .favorites_form {
     display: flex;
-    margin-bottom: 36px;
+    margin-bottom: 32px;
     gap: 78px;
     margin-left: -5px;
 }
@@ -502,7 +510,7 @@ input:checked ~ .season {
 }
 
 .card_subtitle {
-    margin-bottom: 30px;
+    margin-bottom: 28px;
     font-size: 30px;
     letter-spacing: 0.6px;
     text-align: center;
@@ -580,7 +588,7 @@ input:checked ~ .season {
     display: flex;
     flex-direction: column;
     align-items: end;
-    gap: 35px;
+    gap: 34px;
 }
 
 .get_subtitle {
