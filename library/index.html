@@ -356,16 +356,18 @@
                 <div class="card_container">
                     <div class="find_card">
                         <h3 class="card_subtitle">Find your Library card</h3>
-                        <form action="#" class="form">
+                        <form action="#" class="form" id="card_info">
                             <div class="wrapper_inputs">
                                 <div class="form_subtitle">Brooklyn Public Library</div>
                                 <input class="card_input"
+                                     name="name"
                                     type="text"
                                     placeholder="Reader's name"
                                     required
                                     pattern="^[A-Za-z0-9\-]+$"
                                     title="You can enter latin letters, numbers and hyphens">
                                 <input class="card_input"
+                                    name="number"
                                     type="text"
                                     placeholder="Card number"
                                     required
@@ -436,5 +438,6 @@
             </div>
         </footer>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
