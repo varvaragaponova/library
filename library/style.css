@@ -367,6 +367,7 @@ input:checked ~ .season {
 }
 
 .list_title {
+    margin-bottom: 40px;
     color: #BB945F;
     font-family: "Forum";
     font-size: 40px;
