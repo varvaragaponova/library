@@ -696,7 +696,8 @@ input:checked ~ .season {
     flex: 1;
 }
 
-.author a {
+.author a,
+.school a {
     text-decoration: none;
     color: #FFF;
     transition: all .3s;
@@ -755,7 +756,8 @@ input:checked ~ .season {
         transition: all .3s;
     }
 
-    .author a:hover {
+    .author a:hover,
+    .school a:hover {
         color: #BB945F;
         transition: all .3s;
     }
