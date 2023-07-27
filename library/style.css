@@ -80,10 +80,7 @@ body {
 
 .welcome {
     height: 600px;
-    background-image: linear-gradient(180deg, #0C0C0E 0%, #0C0C0E 0.01%, rgba(18, 18, 21, 0.1) 100%), url('./assets/img/welcome_bg.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-color: #0C0C0E;
 }
 
 .title_wrapper {
@@ -109,8 +106,14 @@ body {
     letter-spacing: 4px;
 }
 
-.welcome > .wrapper {
+.welcome .wrapper {
     position: relative;
+    max-width: 1440px;
+    height: 100%;
+    background-image: linear-gradient(180deg, #0C0C0E 0%, #0C0C0E 0.01%, rgba(18, 18, 21, 0.1) 100%), url('./assets/img/welcome_bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 /*SECTION ABOUT*/
@@ -375,7 +378,7 @@ input:checked ~ .season {
     letter-spacing: 2px;
 }
 
-.sweets_list .list_title {
+.sweets_title {
     text-align: end;
 }
 
