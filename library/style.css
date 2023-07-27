@@ -203,7 +203,7 @@ body {
 
 .favorites_form {
     display: flex;
-    margin-bottom: 32px;
+    margin-bottom: 34px;
     gap: 78px;
     margin-left: -5px;
 }
@@ -314,7 +314,7 @@ input:checked ~ .season {
 
 .btn_buy {
     position: absolute;
-    bottom: 13px;
+    bottom: 14px;
     width: 75px;
     height: 30px;
     border-radius: 2px;
