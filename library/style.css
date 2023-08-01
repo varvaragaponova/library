@@ -76,6 +76,10 @@ body {
     height: 28px;
 }
 
+.burger_menu {
+    display: none;
+}
+
 /*SECTION WELCOME*/
 
 .welcome {
@@ -763,5 +767,71 @@ input:checked ~ .season {
     .school a:hover {
         color: #BB945F;
         transition: all .3s;
+    }
+}
+
+@media screen and (width: 768px) {
+    .wrapper {
+        width: 768px;
+    }
+    /*HEADER*/
+
+    .header_content {
+        position: relative;
+        width: auto;
+        display: flex;
+        gap: 40px;
+        align-items: center;
+    }
+
+    /* .header {
+        overflow-x: hidden;
+    } */
+
+    .menu_list {
+        display: none;
+    }
+
+    .burger_menu {
+        display: flex;
+        position: relative;
+        height: 24px;
+        width: 49px;
+        gap: 8px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .burger_line {
+        width: 45px;
+        height: 2px;
+        background-color: #FFF;
+        transition: all .3s;
+    }
+
+    .burger_menu.menu_open {
+        position: relative;
+        width: 36px;
+        height: 36px;
+    }
+
+    .menu_open .line_one {
+        position: absolute;
+        width: 45px;
+        top: 16px;
+        transform: rotate(45deg);
+        transition: all .3s;
+    }
+
+    .menu_open .line_two {
+        position: absolute;
+        width: 45px;
+        top: 16px;
+        transform: rotate(-45deg);
+        transition: all .3s;
+    }
+
+    .menu_open .line_delete {
+        display: none;
     }
 }
