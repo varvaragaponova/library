@@ -834,4 +834,12 @@ input:checked ~ .season {
     .menu_open .line_delete {
         display: none;
     }
+
+    /*WELCOME*/
+    .welcome .wrapper {
+        background-image: linear-gradient(180deg, #0C0C0E 0%, #0C0C0E 0.01%, rgba(18, 18, 21, 0.1) 50%), url('./assets/img/welcomebg_tablet.png');
+        /* background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; */
+    }
 }
