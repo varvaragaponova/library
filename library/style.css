@@ -523,6 +523,7 @@ input:checked ~ .season {
 
 .card_container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -914,5 +915,21 @@ input:checked ~ .season {
 
     .map {
         margin: 0 auto;
+    }
+
+    /*Library card*/
+    .card_container {
+        justify-content: center;
+        gap: 24px;
+    }
+
+    .get_card {
+        width: 600px;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .get_descr {
+        text-align: center;
     }
 }
