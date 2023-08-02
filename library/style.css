@@ -154,6 +154,10 @@ body {
     line-height: 40px;
 }
 
+.slider_wrapper {
+    width: 1400px;
+}
+
 .slider_container {
     position: relative;
     width: 1400px;
@@ -193,6 +197,14 @@ body {
 
 .selected {
     background-color: #BB945F;
+}
+
+.arrow {
+    display: none;
+}
+
+.slider_tablet {
+    display: none;
 }
 
 /*SECTION FAVORITES*/
@@ -838,8 +850,38 @@ input:checked ~ .season {
     /*WELCOME*/
     .welcome .wrapper {
         background-image: linear-gradient(180deg, #0C0C0E 0%, #0C0C0E 0.01%, rgba(18, 18, 21, 0.1) 50%), url('./assets/img/welcomebg_tablet.png');
-        /* background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center; */
+    }
+
+    /*ABOUT*/
+
+    .about_info {
+        margin-bottom: 38px;
+    }
+
+    .slider_wrapper {
+        display: flex;
+        align-items: center;
+        gap: 58px;
+        width: 614px;
+        height: 560px;
+        margin: 0 auto;
+    }
+
+    .arrow {
+        display: block;
+        width: 24px;
+        height: 24px;
+        padding-top: 3px;
+        border: none;
+        background-color: transparent;
+    }
+
+
+    .slider_buttons {
+        width: 130px;
+    }
+
+    .slider_tablet {
+        display: block;
     }
 }
