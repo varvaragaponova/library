@@ -382,6 +382,7 @@ input:checked ~ .season {
 
 .coffee-shop_prices {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -891,5 +892,18 @@ input:checked ~ .season {
         flex-direction: column;
         width: 590px;
         margin: 0 auto;
+    }
+
+    /*COFFEE SHOP*/
+    .coffee-shop_text {
+        width: 732px;
+    }
+
+    .coffee-shop_prices {
+        gap: 40px;
+    }
+
+    .wrapper_sweets {
+        flex: auto;
     }
 }
