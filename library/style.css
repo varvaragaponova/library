@@ -884,4 +884,12 @@ input:checked ~ .season {
     .slider_tablet {
         display: block;
     }
+
+    /*Favorites*/
+
+    .book_list {
+        flex-direction: column;
+        width: 590px;
+        margin: 0 auto;
+    }
 }
