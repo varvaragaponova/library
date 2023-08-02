@@ -932,4 +932,16 @@ input:checked ~ .season {
     .get_descr {
         text-align: center;
     }
+
+    .library_card .wrapper {
+        padding-bottom: 10px;
+    }
+
+    .author_info div {
+        flex: none;
+    }
+
+    .author_info {
+        justify-content: space-between;
+    }
 }
