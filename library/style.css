@@ -459,6 +459,7 @@ input:checked ~ .season {
 
 .contacts_container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -514,7 +515,6 @@ input:checked ~ .season {
     line-height: 40px;
     letter-spacing: 2px;
 }
-
 /*SECTION LIBRARY CARD*/
 
 .library_card .wrapper {
@@ -905,5 +905,14 @@ input:checked ~ .season {
 
     .wrapper_sweets {
         flex: auto;
+    }
+
+    /*CONTACTS*/
+    .contacts_container {
+        gap: 100px;
+    }
+
+    .map {
+        margin: 0 auto;
     }
 }
