@@ -802,53 +802,6 @@ input:checked ~ .season {
         overflow-x: hidden;
     } */
 
-    .menu_list {
-        display: none;
-    }
-
-    .burger_menu {
-        display: flex;
-        position: relative;
-        height: 24px;
-        width: 49px;
-        gap: 8px;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .burger_line {
-        width: 45px;
-        height: 2px;
-        background-color: #FFF;
-        transition: all .3s;
-    }
-
-    .burger_menu.menu_open {
-        position: relative;
-        width: 36px;
-        height: 36px;
-    }
-
-    .menu_open .line_one {
-        position: absolute;
-        width: 45px;
-        top: 16px;
-        transform: rotate(45deg);
-        transition: all .3s;
-    }
-
-    .menu_open .line_two {
-        position: absolute;
-        width: 45px;
-        top: 16px;
-        transform: rotate(-45deg);
-        transition: all .3s;
-    }
-
-    .menu_open .line_delete {
-        display: none;
-    }
-
     /*WELCOME*/
     .welcome .wrapper {
         background-image: linear-gradient(180deg, #0C0C0E 0%, #0C0C0E 0.01%, rgba(18, 18, 21, 0.1) 50%), url('./assets/img/welcomebg_tablet.png');
@@ -943,5 +896,73 @@ input:checked ~ .season {
 
     .author_info {
         justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .wrapper,
+    .header > .wrapper {
+        max-width: 1440px;
+        min-width: 768px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .wrapper {
+        max-width: 1440px;
+        min-width: 600px;
+        width: 100%;
+    }
+
+    .menu_list {
+        display: none;
+    }
+
+    .burger_menu {
+        display: flex;
+        position: relative;
+        height: 24px;
+        width: 49px;
+        gap: 8px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .burger_line {
+        width: 45px;
+        height: 2px;
+        background-color: #FFF;
+        transition: all .3s;
+    }
+
+    .burger_menu.menu_open {
+        position: relative;
+        width: 36px;
+        height: 36px;
+    }
+
+    .menu_open .line_one {
+        position: absolute;
+        width: 45px;
+        top: 16px;
+        transform: rotate(45deg);
+        transition: all .3s;
+    }
+
+    .menu_open .line_two {
+        position: absolute;
+        width: 45px;
+        top: 16px;
+        transform: rotate(-45deg);
+        transition: all .3s;
+    }
+
+    .menu_open .line_delete {
+        display: none;
+    }
+
+    .header_content {
+        width: auto;
     }
 }
