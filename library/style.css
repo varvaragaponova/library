@@ -836,25 +836,9 @@ input:checked ~ .season {
         display: block;
     }
 
-    /*Favorites*/
-
-    .book_list {
-        flex-direction: column;
-        width: 590px;
-        margin: 0 auto;
-    }
-
     /*COFFEE SHOP*/
     .coffee-shop_text {
         width: 732px;
-    }
-
-    .coffee-shop_prices {
-        gap: 40px;
-    }
-
-    .wrapper_sweets {
-        flex: auto;
     }
 
     /*CONTACTS*/
@@ -1050,5 +1034,15 @@ input:checked ~ .season {
         width: 90vw;
         gap: 0;
         justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .coffee-shop_prices {
+        gap: 40px;
+    }
+
+    .wrapper_sweets {
+        flex: auto;
     }
 }
