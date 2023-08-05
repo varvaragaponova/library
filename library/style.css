@@ -798,14 +798,10 @@ input:checked ~ .season {
         align-items: center;
     }
 
-    /* .header {
-        overflow-x: hidden;
-    } */
-
     /*WELCOME*/
-    .welcome .wrapper {
+    /* .welcome .wrapper {
         background-image: linear-gradient(180deg, #0C0C0E 0%, #0C0C0E 0.01%, rgba(18, 18, 21, 0.1) 50%), url('./assets/img/welcomebg_tablet.png');
-    }
+    } */
 
     /*ABOUT*/
 
@@ -899,11 +895,11 @@ input:checked ~ .season {
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 630px) {
     .wrapper,
     .header > .wrapper {
         max-width: 1440px;
-        min-width: 768px;
+        min-width: 630px;
         width: 100%;
     }
 }
@@ -914,6 +910,12 @@ input:checked ~ .season {
         min-width: 600px;
         width: 100%;
     }
+
+    /*HEADER*/
+
+    /* .header {
+        overflow-x: hidden;
+    } */
 
     .menu_list {
         display: none;
@@ -964,5 +966,89 @@ input:checked ~ .season {
 
     .header_content {
         width: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .welcome .wrapper {
+        background-image: linear-gradient(180deg, #0C0C0E 0%, #0C0C0E 0.01%, rgba(18, 18, 21, 0.1) 50%), url('./assets/img/welcomebg_tablet.png');
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    /*ABOUT*/
+
+    .about_info {
+        margin-bottom: 38px;
+    }
+
+    .slider_wrapper {
+        display: flex;
+        align-items: center;
+        gap: 58px;
+        width: 1089px;
+        height: 560px;
+        margin: 0 auto;
+    }
+
+    .arrow {
+        display: block;
+        width: 24px;
+        height: 24px;
+        padding-top: 3px;
+        border: none;
+        background-color: transparent;
+    }
+
+
+    .slider_buttons {
+        width: 130px;
+    }
+
+    .slider_tablet {
+        display: block;
+    }
+
+    /*FAVORITES*/
+    .favorites_content {
+        width: 90vw;
+        margin: 0 auto;
+    }
+
+    .book_list {
+        column-gap: 0;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 1282px) {
+    .book_list {
+        flex-direction: column;
+        width: 590px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 1122px) {
+    /*ABOUT*/
+
+    .slider_wrapper {
+        width: 614px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    /*ABOUT*/
+
+    .slider_wrapper {
+        gap: 50px;
+        width: 600px;
+    }
+
+    /*FAVORITES*/
+    .favorites_form {
+        width: 90vw;
+        gap: 0;
+        justify-content: space-between;
     }
 }
