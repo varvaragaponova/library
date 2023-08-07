@@ -841,35 +841,6 @@ input:checked ~ .season {
         width: 732px;
     }
 
-    /*CONTACTS*/
-    .contacts_container {
-        gap: 100px;
-    }
-
-    .map {
-        margin: 0 auto;
-    }
-
-    /*Library card*/
-    .card_container {
-        justify-content: center;
-        gap: 24px;
-    }
-
-    .get_card {
-        width: 600px;
-        align-items: center;
-        gap: 40px;
-    }
-
-    .get_descr {
-        text-align: center;
-    }
-
-    .library_card .wrapper {
-        padding-bottom: 10px;
-    }
-
     .author_info div {
         flex: none;
     }
@@ -1018,6 +989,26 @@ input:checked ~ .season {
 
     .slider_wrapper {
         width: 614px;
+    }
+
+    /*LIBRARY CARD*/
+    .card_container {
+        justify-content: center;
+        gap: 24px;
+    }
+
+    .get_card {
+        width: 600px;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .get_descr {
+        text-align: center;
+    }
+
+    .library_card .wrapper {
+        padding-bottom: 10px;
     }
 }
 
