@@ -1035,6 +1035,14 @@ input:checked ~ .season {
         gap: 0;
         justify-content: space-between;
     }
+
+    /*CONTACTS*/
+    .map iframe {
+        max-width: 696px;
+        min-width: 90vw;
+        width: 100%;
+        margin: 0 auto;
+    }
 }
 
 @media screen and (max-width: 980px) {
@@ -1044,5 +1052,15 @@ input:checked ~ .season {
 
     .wrapper_sweets {
         flex: auto;
+    }
+}
+
+@media screen and (max-width: 1240px) {
+    .contacts_container {
+        gap: 100px;
+    }
+
+    .map {
+        margin: 0 auto;
     }
 }
