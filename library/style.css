@@ -944,6 +944,14 @@ input:checked ~ .season {
         z-index: 2;
         right: 105px;
     }
+
+    .favorites_form {
+        margin-bottom: 36px;
+    }
+
+    .coffee-shop .wrapper {
+        padding-top: 20px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -1016,7 +1024,7 @@ input:checked ~ .season {
     /*LIBRARY CARD*/
     .card_container {
         justify-content: center;
-        gap: 24px;
+        gap: 22px;
     }
 
     .get_card {
