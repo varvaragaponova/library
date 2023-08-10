@@ -76,6 +76,10 @@ body {
     height: 28px;
 }
 
+.burger_menu {
+    display: none;
+}
+
 /*SECTION WELCOME*/
 
 .welcome {
@@ -150,6 +154,10 @@ body {
     line-height: 40px;
 }
 
+.slider_wrapper {
+    width: 1400px;
+}
+
 .slider_container {
     position: relative;
     width: 1400px;
@@ -189,6 +197,14 @@ body {
 
 .selected {
     background-color: #BB945F;
+}
+
+.arrow {
+    display: none;
+}
+
+.slider_tablet {
+    display: none;
 }
 
 /*SECTION FAVORITES*/
@@ -366,6 +382,7 @@ input:checked ~ .season {
 
 .coffee-shop_prices {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -442,6 +459,7 @@ input:checked ~ .season {
 
 .contacts_container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -497,7 +515,6 @@ input:checked ~ .season {
     line-height: 40px;
     letter-spacing: 2px;
 }
-
 /*SECTION LIBRARY CARD*/
 
 .library_card .wrapper {
@@ -506,6 +523,7 @@ input:checked ~ .season {
 
 .card_container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -724,7 +742,8 @@ input:checked ~ .season {
 
     .profile:hover,
     .slider_btn:hover,
-    .input_container {
+    .input_container:hover,
+    .burger_menu:hover {
         cursor: pointer;
     }
 
@@ -763,5 +782,310 @@ input:checked ~ .season {
     .school a:hover {
         color: #BB945F;
         transition: all .3s;
+    }
+}
+
+@media screen and (width: 768px) {
+    /*ABOUT*/
+
+    .about_info {
+        margin-bottom: 38px;
+    }
+
+    .slider_wrapper {
+        display: flex;
+        align-items: center;
+        gap: 58px;
+        width: 614px;
+        height: 560px;
+        margin: 0 auto;
+    }
+
+    .arrow {
+        display: block;
+        width: 24px;
+        height: 24px;
+        padding-top: 3px;
+        border: none;
+        background-color: transparent;
+    }
+
+
+    .slider_buttons {
+        width: 130px;
+    }
+
+    .slider_tablet {
+        display: block;
+    }
+
+    /*COFFEE SHOP*/
+    .coffee-shop_text {
+        width: 732px;
+    }
+
+    .author_info div {
+        flex: none;
+    }
+
+    .author_info {
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 630px) {
+    .wrapper,
+    .header > .wrapper {
+        max-width: 1440px;
+        min-width: 630px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .wrapper {
+        max-width: 1440px;
+        min-width: 600px;
+        width: 100%;
+    }
+
+    /*HEADER*/
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .menu_list {
+        position: absolute;
+        display: flex;
+        height: 570px;
+        width: 332px;
+        right: -332px;
+        top: 0;
+        gap: 30px;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #0C0C0E;
+        z-index: 1;
+        transition: all .3s;
+    }
+
+    .menu_item {
+        display: inline-block;
+        width: 100%;
+        height: 50px;
+    }
+
+    .menu_list a {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+
+    .burger_menu {
+        /* position: relative; */
+        display: flex;
+        height: 24px;
+        width: 49px;
+        gap: 8px;
+        flex-direction: column;
+        align-items: center;
+        z-index: 2;
+    }
+
+    .burger_line {
+        width: 45px;
+        height: 2px;
+        background-color: #FFF;
+        transition: all .3s;
+    }
+
+    .burger_menu.menu_open {
+        position: relative;
+        width: 36px;
+        height: 36px;
+    }
+
+    .menu_list.menu_visible {
+        right: 0px;
+        transition: all .3s;
+    }
+
+    .menu_open .line_one {
+        position: absolute;
+        width: 45px;
+        top: 18px;
+        right: 4px;
+        transform: rotate(45deg);
+        transition: all .3s;
+    }
+
+    .menu_open .line_two {
+        position: absolute;
+        width: 45px;
+        top: 18px;
+        right: 4px;
+        transform: rotate(-45deg);
+        transition: all .3s;
+    }
+
+    .menu_open .line_delete {
+        display: none;
+    }
+
+    .header_content {
+        width: auto;
+    }
+
+    .profile {
+        position: absolute;
+        z-index: 2;
+        right: 105px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .welcome .wrapper {
+        background-image: linear-gradient(180deg, #0C0C0E 0%, #0C0C0E 0.01%, rgba(18, 18, 21, 0.1) 50%), url('./assets/img/welcomebg_tablet.png');
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    /*ABOUT*/
+
+    .about_info {
+        margin-bottom: 38px;
+    }
+
+    .slider_wrapper {
+        display: flex;
+        align-items: center;
+        gap: 58px;
+        width: 1089px;
+        height: 560px;
+        margin: 0 auto;
+    }
+
+    .arrow {
+        display: block;
+        width: 24px;
+        height: 24px;
+        padding-top: 3px;
+        border: none;
+        background-color: transparent;
+    }
+
+
+    .slider_buttons {
+        width: 130px;
+    }
+
+    .slider_tablet {
+        display: block;
+    }
+
+    /*FAVORITES*/
+    .favorites_content {
+        width: 90vw;
+        margin: 0 auto;
+    }
+
+    .book_list {
+        column-gap: 0;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 1282px) {
+    .book_list {
+        flex-direction: column;
+        width: 590px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 1122px) {
+    /*ABOUT*/
+
+    .slider_wrapper {
+        width: 614px;
+    }
+
+    /*LIBRARY CARD*/
+    .card_container {
+        justify-content: center;
+        gap: 24px;
+    }
+
+    .get_card {
+        width: 600px;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .get_descr {
+        text-align: center;
+    }
+
+    .library_card .wrapper {
+        padding-bottom: 10px;
+    }
+
+    .author_info div {
+        flex: none;
+    }
+
+    .author_info {
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    /*ABOUT*/
+
+    .slider_wrapper {
+        gap: 50px;
+        width: 600px;
+    }
+
+    /*FAVORITES*/
+    .favorites_form {
+        width: 90vw;
+        gap: 0;
+        justify-content: space-between;
+    }
+
+    /*CONTACTS*/
+    .map iframe {
+        max-width: 696px;
+        min-width: 90vw;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .author_info div {
+        flex: 1;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .coffee-shop_prices {
+        gap: 40px;
+    }
+
+    .wrapper_sweets {
+        flex: auto;
+    }
+}
+
+@media screen and (max-width: 1240px) {
+    .contacts_container {
+        gap: 100px;
+    }
+
+    .map {
+        margin: 0 auto;
     }
 }

@@ -36,6 +36,11 @@
                 <div class="profile">
                     <img src="./assets/icon/icon_profile.svg" alt="profile">
                 </div>
+                <div class="burger_menu">
+                    <span class="burger_line line_one"></span>
+                    <span class="burger_line line_delete"></span>
+                    <span class="burger_line line_two"></span>
+                </div>
             </div>
         </div>
     </header>
@@ -53,14 +58,23 @@
             <div class="wrapper">
                 <h2 class="title">About</h2>
                 <p class="about_info">The Brooklyn Library is a free workspace, a large number of books and a cozy coffee shop inside</p>
-                <div class="slider_container">
-                    <div class="slider_images">
-                        <img src="./assets/img/girl.png" alt="girl in library" class="slider_img">
-                        <img src="./assets/img/statues.png" alt="statues" class="slider_img">
-                        <img src="./assets/img/library_room.png" alt="room in library" class="slider_img">
-                        <img src="./assets/img/bookshelf.png" alt="bookshelf" class="slider_img">
-                        <img src="./assets/img/architecture.png" alt="architecture" class="slider_img">
+                <div class="slider_wrapper">
+
+                    <button class="arrow">
+                        <img src="./assets/icon/Carret_Left.svg" alt="arrow left" class="arrow_left">
+                    </button>
+                    <div class="slider_container">
+                        <div class="slider_images">
+                            <img src="./assets/img/girl.png" alt="girl in library" class="slider_img">
+                            <img src="./assets/img/statues.png" alt="statues" class="slider_img">
+                            <img src="./assets/img/library_room.png" alt="room in library" class="slider_img">
+                            <img src="./assets/img/bookshelf.png" alt="bookshelf" class="slider_img">
+                            <img src="./assets/img/architecture.png" alt="architecture" class="slider_img">
+                        </div>
                     </div>
+                    <button class="arrow">
+                        <img src="./assets/icon/Carret_Right.svg" alt="arrow right" class="arrow_rigth">
+                    </button>
                 </div>
                 <div class="slider_buttons">
                     <button class="slider_btn">
@@ -70,6 +84,12 @@
                         <span class="btn_circle"></span>
                     </button>
                     <button class="slider_btn">
+                        <span class="btn_circle"></span>
+                    </button>
+                    <button class="slider_btn slider_tablet">
+                        <span class="btn_circle"></span>
+                    </button>
+                    <button class="slider_btn slider_tablet">
                         <span class="btn_circle"></span>
                     </button>
                 </div>
@@ -82,25 +102,25 @@
                 <div class="select_info">Pick favorites of season</div>
                 <form class="favorites_form">
                     <label for="winter" class="input_container">
-                        <input type="radio" id="winter" class="input" checked>
+                        <input type="radio" id="winter" class="input" checked name="season">
                         <span class="done"></span>
                         <span class="season">Winter</span>
                     </label>
 
                     <label for="spring" class="input_container">
-                        <input type="radio" id="spring" class="input">
+                        <input type="radio" id="spring" class="input" name="season">
                         <span class="done"></span>
                         <span class="season">Spring</span>
                     </label>
 
                     <label for="summer" class="input_container">
-                        <input type="radio" id="summer" class="input">
+                        <input type="radio" id="summer" class="input" name="season">
                         <span class="done"></span>
                         <span class="season">Summer</span>
                     </label>
 
                     <label for="autumn" class="input_container">
-                        <input type="radio" id="autumn" class="input">
+                        <input type="radio" id="autumn" class="input" name="season">
                         <span class="done"></span>
                         <span class="season">Autumn</span>
                     </label>
@@ -286,7 +306,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="wrapper_list">
+                    <div class="wrapper_list wrapper_sweets">
                         <div class="list_title sweets_title">Desserts & Cakes</div>
                         <ul class="sweets_list">
                             <li class="sweets_item">
@@ -388,56 +408,55 @@
                 </div>
             </div>
         </section>
-
-        <footer class="footer">
-            <div class="wrapper">
-                <div class="information_container">
-                    <div class="descr">
-                        <div class="address">
-                            <a href="https://www.google.com/maps/search/286+Cadman+Plaza,+New+York,+NY+11238,+United+States/@40.6956337,-73.9932709,17z/data=!3m1!4b1?entry=ttu" target="_blank">286 Cadman Plaza, New York, NY 11238, United States</a>
-                        </div>
-                        <div class="work_time">
-                            <div class="days">Mon - Fri</div>
-                            <div class="times">08:00 am - 07:00 pm</div>
-                        </div>
+    </main>
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="information_container">
+                <div class="descr">
+                    <div class="address">
+                        <a href="https://www.google.com/maps/search/286+Cadman+Plaza,+New+York,+NY+11238,+United+States/@40.6956337,-73.9932709,17z/data=!3m1!4b1?entry=ttu" target="_blank">286 Cadman Plaza, New York, NY 11238, United States</a>
                     </div>
-                    <div class="descr">
-                        <ul class="sociality_list">
-                            <li>
-                                <a href="https://twitter.com/rollingscopes" target="_blank" class="sociality_item">
-                                    <img src="./assets/icon/u_twitter-alt.svg" alt="twitter" class="sociality_icon">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.instagram.com/rsschool_en/" target="_blank" class="sociality_item">
-                                    <img src="./assets/icon/u_instagram.svg" alt="instagram" class="sociality_icon">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.facebook.com/groups/TheRollingScopes" target="_blank" class="sociality_item">
-                                    <img src="./assets/icon/u_facebook-f.svg" alt="facebook" class="sociality_icon">
-                                </a>
-                            </li>
-                        </ul>
-                        <div class="work_time">
-                            <div class="days">Sat - Sun</div>
-                            <div class="times">10:00 am - 06:00 pm</div>
-                        </div>
+                    <div class="work_time">
+                        <div class="days">Mon - Fri</div>
+                        <div class="times">08:00 am - 07:00 pm</div>
                     </div>
                 </div>
-                <div class="line"></div>
-                <div class="author_info">
-                    <div class="year">2023</div>
-                    <div class="school">
-                        <a href="https://rs.school/js-stage0/" target="_blank">The Rolling Scopes School</a>
-                    </div>
-                    <div class="author">
-                        <a href="https://github.com/varvaragaponova" target="_blank">Varvara Gaponova</a>
+                <div class="descr">
+                    <ul class="sociality_list">
+                        <li>
+                            <a href="https://twitter.com/rollingscopes" target="_blank" class="sociality_item">
+                                <img src="./assets/icon/u_twitter-alt.svg" alt="twitter" class="sociality_icon">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/rsschool_en/" target="_blank" class="sociality_item">
+                                <img src="./assets/icon/u_instagram.svg" alt="instagram" class="sociality_icon">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/groups/TheRollingScopes" target="_blank" class="sociality_item">
+                                <img src="./assets/icon/u_facebook-f.svg" alt="facebook" class="sociality_icon">
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="work_time">
+                        <div class="days">Sat - Sun</div>
+                        <div class="times">10:00 am - 06:00 pm</div>
                     </div>
                 </div>
             </div>
-        </footer>
-    </main>
+            <div class="line"></div>
+            <div class="author_info">
+                <div class="year">2023</div>
+                <div class="school">
+                    <a href="https://rs.school/js-stage0/" target="_blank">The Rolling Scopes School</a>
+                </div>
+                <div class="author">
+                    <a href="https://github.com/varvaragaponova" target="_blank">Gaponova</a>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
