@@ -742,7 +742,8 @@ input:checked ~ .season {
 
     .profile:hover,
     .slider_btn:hover,
-    .input_container {
+    .input_container:hover,
+    .burger_menu:hover {
         cursor: pointer;
     }
 
@@ -865,7 +866,7 @@ input:checked ~ .season {
         align-items: center;
         flex-direction: column;
         justify-content: center;
-        background-color: black;
+        background-color: #0C0C0E;
         z-index: 1;
         transition: all .3s;
     }
@@ -915,7 +916,8 @@ input:checked ~ .season {
     .menu_open .line_one {
         position: absolute;
         width: 45px;
-        top: 16px;
+        top: 18px;
+        right: 4px;
         transform: rotate(45deg);
         transition: all .3s;
     }
@@ -923,7 +925,8 @@ input:checked ~ .season {
     .menu_open .line_two {
         position: absolute;
         width: 45px;
-        top: 16px;
+        top: 18px;
+        right: 4px;
         transform: rotate(-45deg);
         transition: all .3s;
     }
@@ -937,8 +940,9 @@ input:checked ~ .season {
     }
 
     .profile {
-        position: relative;
+        position: absolute;
         z-index: 2;
+        right: 105px;
     }
 }
 
